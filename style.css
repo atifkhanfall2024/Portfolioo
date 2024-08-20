@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+html , body{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #dadada;
+}
+#main{
+   overflow-x: hidden;
+ 
+ position: relative;
+}
+#home{
+    
+    position: relative;
+    overflow-x: hidden;
+
+    height: 90vh;
+    width: 100vw;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: 40px;
+    width: 100vw;
+ 
+    background-color:#dadada;
+    box-shadow: 2px 3px 4px 5px rgba(0, 0, 0, 0.411);
+}
+#nav h2{
+    color: rgba(178, 32, 32, 0.571);
+    font-size: 35px;
+    margin-top: -30px;
+    user-select: none;
+    transition: all ease 2s;
+ 
+}
+#nav h2 span{
+    color: #222;
+    font-size: 65px;
+    
+}
+#navlinks{
+    display: flex;
+    gap: 50px;
+}
+#nav button{
+    
+    color: #222;
+    font-size: 20px; 
+   padding: .4vh 1vw;
+   border: 2px solid rgba(0, 0, 0, 0.402);
+   border-radius: 30px;
+  
+}
+#nav button a{
+    text-decoration: none;
+    color: #222;
+    font-size: 20px; 
+}
+#nav button:hover{
+     background-color: rgba(178, 32, 32, 0.45) ;
+}
+#navlinks a{
+    text-decoration: none;
+    color: #222;
+    font-size: 20px;
+}
+#navlinks a:hover{
+    border-bottom: 2px solid #222;
+    transform: translateY(-6px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#image{
+position: absolute;
+right: 10%;top: 25%;
+overflow: hidden;
+overflow-x: hidden;
+   height: 300px;
+   width: 300px;
+   background-color: rgba(178, 32, 32, 0.45) ;
+   border-radius: 50%;
+   background-image: url(attif.png);
+   background-size: cover;
+   background-position: center;
+  
+
+}
+#home::-webkit-scrollbar{
+    display: none;
+}
+#hometext{
+position: absolute
+;
+top: 20%;
+left: 10%;
+}
+#hometext h3{
+    background-color:  rgba(178, 32, 32, 0.45);
+    height: 35px;
+    text-align: center;
+    width: 30%;
+    white-space: none;
+    border: 2px solid #dadada;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+#hometext p{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#buttons{
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+   #btn1 {
+   padding: 1vh 2vw;
+   border: 1px solid #3709dd;
+   color: #fff;
+   background-color: #3709dd;
+   border-radius: 30px;
+
+}
+#btn2{
+    padding: 1vh 2vw;
+    border: 1px solid #3709dd;
+    
+    
+    border-radius: 30px;  
+}
+#icons{
+    position: absolute;
+   top: 10vh;
+   left: -1vw;
+    height: 40px;
+    
+    width: 50%;
+
+}
+#icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px;
+    background-color:#dadada;
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    color: #fff;
+}
+#scrolldown{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    z-index: 999;
+    color: #222;
+    background-color:#dadada;
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.411);
+    text-align: center;
+}
+#scrolldown:hover{
+    transform: translateY(7px);
+}
+#scrolldown i{
+    font-size: 20px;
+}
+#Aboutus{
+   position: relative;
+    width: 100vw;
+    height: 70vh;
+   
+    
+}
+#text h2{
+  position: absolute;
+  
+  
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  top: 10%;
+  left: 45%;
+}
+#card{
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    top: 25%;
+    left: 10%;
+    background-color:#dadada;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.411);
+}
+#bgimg{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+  background-image: url(1.png);
+  background-size: cover;
+  background-position: center;
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.411);
+    
+    right: 5%;
+    top: 5%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+#abouttext{
+    text-align: center;
+    width: 70%;
+    transition: all ease-out 3s;
+
+}
+#abouttext h2{
+    margin-bottom: 20px;
+
+}
+#abouttext p{
+    font-size: 15px;
+    white-space: none;
+    opacity: .6;
+}
+#abouttext a button{
+    
+        text-decoration: none;
+        width: 40%;
+        color: #222;
+        font-size: 15px; 
+        background-color: rgba(178, 32, 32, 0.45) ;
+      
+        border-radius: 30px;
+        margin-left: 260px;
+        
+}
+#dbtn a button:hover{
+    background-color: transparent;
+    color: #222;
+}
+    #skills{
+        display: flex;
+        gap: 20px;
+
+       position: absolute;
+       right: 10%;
+       top: 25%;
+        height: 250px;
+    width: 500px;
+   
+    }
+  
+    #skills .class1 h4{
+        background-color: rgba(178, 32, 32, 0.45);
+        
+       font-size: 15px;
+        border-radius:5px ;
+    }
+    .class1 p{
+        margin-top: 10px;
+        height: 20px;
+        text-align: center;
+        width: 80px;
+        white-space: none;
+        border-radius:5px ;
+       
+        background-color:rgba(178, 32, 32, 0.45) ;
+    }
+  
+   #projects{
+    position: relative
+    ;
+    height: 70vh;
+    width: 100vw;
+   }   
+   #ptext h2{
+    margin-top: 30px;
+    font-weight: bolder;
+    text-align: center;
+   }     
+   #pcards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 20%;
+    height: 40vh;
+    width: 100%;
+   
+    
+      
+   }
+  #pcards .card{
+    
+      height: 200px;
+    width: 300px;
+    background-color:#dadada;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px 3px rgba(0, 0, 0, 0.411);
+   
+   }
+   .card i{
+    position: absolute
+
+    ;
+    top: 40%;
+    margin-left: 140px;
+    color: rgba(178, 32, 32, 0.45) ;
+    font-size: 30px;
+   }
+   .card h3{
+    position: absolute
+
+    ;
+    top: 55%;
+    margin-left: 100px;
+   }
+ 
+   .card p{
+    position: absolute
+
+    ;
+    top: 70%;
+    margin-left: 100px;
+   }
+  
+  
+  #overlay{
+    position: absolute;
+    height: 90vh;
+    width: 100vw;
+   
+
+    
+  
+   
+    
+   
+  } 
+  #overlay #image{
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    top: 35%;
+    right: 15%;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(1.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #overlay>h1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50% , -50%);
+  }
+  #overlay>p{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50% , -50%);
+  }
+#contact{
+    position: relative
+    ;
+    height: 80vh;
+    width: 100vw;
+  
+}    
+#ctext{
+    text-align: center;
+    margin: 40px;
+}
+#ctext p{
+    opacity: .6;
+}
+#ctext h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  #left{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    height: 50vh;
+    width: 40vw;
+    border-radius: 20px;
+    background-color:rgba(178, 32, 32, 0.45) ;
+
+
+  }
+
+  #ltext{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50% , -50%);
+  }
+  #ltext i{
+    font-size: 15px;
+  }
+  #right{
+    position: absolute;
+    right: 12%;
+    margin: 10px;
+  }
+  #right #name{
+    padding: 1vh 2vw;
+    border-radius: 10px;
+    border: 1px solid #222;
+  }
+  #right #num{
+    padding: 1vh 2vw;
+    border-radius: 10px;
+    border: 1px solid #222;
+  }
+  #right #message{
+    padding: 7vh 9vw;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: 1px solid #222;
+  }
+  #right button{
+    width: 30%;
+    padding: 1vh 2vw;
+    position: absolute;
+    bottom: -30%;
+    left: 15%;
+    border-radius: 20px;
+    border: 1px solid #222;
+    background-color:rgba(178, 32, 32, 0.45) ;
+  }
+ 
+#map{
+  
+    height: 70vh;
+    width: 100vw;
+  z-index: 9999;
+}
+iframe{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+#map h2{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+#map iframe{
+    margin-top: -38px;
+}
